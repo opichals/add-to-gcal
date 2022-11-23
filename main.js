@@ -41,7 +41,8 @@ function openEventCreationTab(info) {
 }
 
 chrome.contextMenus.create({
+  id: 'add-to-gcal-onclick-with-selection',
   title: "Add to GCal",
-  contexts: ["selection"],
-  onclick: openEventCreationTab
+  contexts: ["selection"]
 });
+chrome.contextMenus.onClicked.addListener(openEventCreationTab)

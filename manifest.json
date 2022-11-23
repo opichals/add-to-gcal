@@ -2,12 +2,9 @@
   "name": "Add to GCal",
   "version": "0.2.0",
   "description": "Extract event data from text. Open new, Google Calendar event creation tab with prepopulated data.",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "background": {
-    "scripts": [
-      "dist/vendor/chrono.js",
-      "main.js"
-    ]
+    "service_worker": "dist/main.js"
   },
   "permissions": [
     "contextMenus",
@@ -17,7 +14,9 @@
   "icons": {
     "16": "images/event_16.png"
   },
-  "browser_action": {
-    "default_icon": "images/event_16.png"
+  "action": {
+    "browser": {
+      "default_icon": "images/event_16.png"
+    }
   }
 }
