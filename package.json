@@ -4,7 +4,7 @@
   "description": "Chrome extension: Extract event data from text and open new tab with new, prepopulated event in Google Calendar",
   "main": "main.js",
   "scripts": {
-    "build": "npx browserify main.js node_modules/chrono-node/dist/index.js --s chrono -o dist/main.js"
+    "build": "npx browserify main.js node_modules/chrono-node/dist/index.js --s chrono -o extension/service_worker.js"
   },
   "repository": {
     "type": "git",

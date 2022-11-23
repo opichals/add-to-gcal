@@ -4,7 +4,7 @@
   "description": "Extract event data from text. Open new, Google Calendar event creation tab with prepopulated data.",
   "manifest_version": 3,
   "background": {
-    "service_worker": "dist/main.js"
+    "service_worker": "service_worker.js"
   },
   "permissions": [
     "contextMenus",
