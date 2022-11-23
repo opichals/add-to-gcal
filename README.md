@@ -6,8 +6,9 @@ Based on:
 * https://github.com/borismasis/send-to-calendar
 
 
-## Install dependencies
+## Install & build
 
 ```bash
-bower install
+npm install
+npm run build
 ```

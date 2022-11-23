@@ -1,0 +1,26 @@
+{
+  "name": "add-to-gcal",
+  "version": "1.0.0",
+  "description": "Chrome extension: Extract event data from text and open new tab with new, prepopulated event in Google Calendar",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx browserify node_modules/chrono-node/dist/index.js --s chrono -o dist/vendor/chrono.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opichals/add-to-gcal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opichals/add-to-gcal/issues"
+  },
+  "homepage": "https://github.com/opichals/add-to-gcal#readme",
+  "dependencies": {
+    "chrono-node": "^2.4.2"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}
